@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            function submitForm() {
+                alert("Form Submitted!");
+            }
+        </script>
+        <title>Blog Posting</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        
+        <h1>New Blog Post</h1>
+    
+        <form>
+
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title">
+
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author">
+
+            <label for="content">Content:</label>
+            <textarea id="content" name="content">text area</textarea>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="Tutorial">Tutorial</option>
+                <option value="Support">Support</option>
+                <option value="Other">Other</option>
+                </select>
+
+                <button type="button" onclick="submitForm()">Submit</button>
+
+        </form>
+
+    </body>
+</html>
